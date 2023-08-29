@@ -1,0 +1,12 @@
+homeScreen As screen:
+    Fill: =RGBA(232, 232, 232, 1)
+
+    headerComponent_1 As headerComponent:
+        onSelectHeader: =true
+
+    navbarComponent_1 As navbarComponent:
+        collapseNavbar: =Set(varAdjustWidth, true)
+        Height: =Parent.Height - Self.Y
+        Y: =headerComponent_1.Height
+        ZIndex: =2
+

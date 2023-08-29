@@ -1,0 +1,20 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =ClearCollect(
+            colNavBarItems, 
+            {
+                name: "Home",
+                icon: Icon.Home,
+                screen: homeScreen
+            }
+        )
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

@@ -1,0 +1,82 @@
+headerComponent As CanvasComponent:
+    onSelectHeader():
+        ThisProperty:
+            Default: =true
+    Fill: =RGBA(0, 0, 0, 0)
+    headerText: ="Text"
+    Height: =Max(App.Height, App.MinScreenHeight)/10.5
+    Width: =Max(App.Width, App.MinScreenWidth)
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 51, 102, 1)
+        Fill: =RGBA(39, 67, 125, 1)
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Image1 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =Parent.Height
+        Image: =mail
+        ImagePosition: =ImagePosition.Fill
+        PaddingBottom: =2
+        PaddingLeft: =2
+        PaddingRight: =5
+        PaddingTop: =2
+        RadiusBottomLeft: =Self.Width
+        RadiusBottomRight: =Self.Width
+        RadiusTopLeft: =Self.Width 
+        RadiusTopRight: =Self.Width
+        Width: =Self.Height
+        X: =Parent.Width - Self.Width
+        ZIndex: =2
+
+    Icon1 As icon.Hamburger:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(250, 250, 250, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =Parent.Height
+        Icon: =Icon.Waffle
+        OnSelect: =headerComponent.onSelectHeader()
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =Parent.Height
+        ZIndex: =3
+
+    Label1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FontWeight: =FontWeight.Semibold
+        Size: =13
+        Text: =headerComponent.headerText
+        Width: =Parent.Width / 2
+        X: =Self.Width / 2
+        Y: =Parent.Height / 4
+        ZIndex: =4
+
+    Label2 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(246, 246, 246, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        Size: =10
+        Text: =Now()
+        VerticalAlign: =VerticalAlign.Bottom
+        Width: =221
+        X: =1064
+        Y: =Parent.Height - Self.Height
+        ZIndex: =5
+
