@@ -7,8 +7,14 @@ App As appinfo:
                 name: "Home",
                 icon: Icon.Home,
                 screen: homeScreen
+            },
+            {
+                name: "Speakers",
+                icon: Icon.Home,
+                screen: speakerScreen
             }
-        )
+        );
+        ClearCollect(colSpeaker, eventSpeakers);
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

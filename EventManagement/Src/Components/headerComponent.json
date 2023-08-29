@@ -72,7 +72,7 @@
         "Name": "Rectangle1",
         "Parent": "headerComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 2,
+        "PublishOrderIndex": 25,
         "Rules": [
           {
             "Category": "Design",
@@ -298,7 +298,7 @@
         "Name": "Icon1",
         "Parent": "headerComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 3,
+        "PublishOrderIndex": 26,
         "Rules": [
           {
             "Category": "Design",
@@ -636,7 +636,7 @@
         "Name": "Image1",
         "Parent": "headerComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 4,
+        "PublishOrderIndex": 27,
         "Rules": [
           {
             "Category": "Data",
@@ -942,7 +942,7 @@
         "Name": "Label1",
         "Parent": "headerComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 5,
+        "PublishOrderIndex": 28,
         "Rules": [
           {
             "Category": "Data",
@@ -1308,7 +1308,7 @@
         "Name": "Label2",
         "Parent": "headerComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 6,
+        "PublishOrderIndex": 29,
         "Rules": [
           {
             "Category": "Data",

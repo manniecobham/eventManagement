@@ -1,0 +1,103 @@
+[
+  {
+    "DisplayName": "eventSpeakers (Views)",
+    "Name": "_ec_eventspeakers_views",
+    "RelatedEntityName": "eventSpeakers",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2c598dc6-54e1-47f5-badb-39b17c9bb73b": "Inactive eventSpeakers",
+      "4760e71d-f4ad-4fbc-8ad8-139df0f67cde": "eventSpeakers Associated View",
+      "928915de-55c8-4149-906c-d6c56bfd3d7a": "eventSpeakers Advanced Find View",
+      "c48b80e3-687a-4863-b1c6-bfb6249d8b5e": "eventSpeakers Lookup View",
+      "e54eed8c-51f2-4fe5-ae06-a26d8208e094": "Active eventSpeakers"
+    }
+  },
+  {
+    "DisplayName": "Status (eventSpeakers)",
+    "Name": "ec_eventspeakers_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "eventSpeakers"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "eventSpeakers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (eventSpeakers)",
+    "Name": "ec_eventspeakers_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "eventSpeakers"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "eventSpeakers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ec_eventspeakerses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ec_eventspeakers",
+    "Name": "eventSpeakers",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "ec_aboutspeaker": "About Speaker",
+      "ec_endtime": "endTime",
+      "ec_eventspeakers_AsyncOperations": "System Jobs",
+      "ec_eventspeakers_BulkDeleteFailures": "Bulk Delete Failures",
+      "ec_eventspeakers_DuplicateBaseRecord": "Duplicate Records (ec_eventspeakers_DuplicateBaseRecord)",
+      "ec_eventspeakers_DuplicateMatchingRecord": "Duplicate Records (ec_eventspeakers_DuplicateMatchingRecord)",
+      "ec_eventspeakers_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ec_eventspeakers_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ec_eventspeakers_ProcessSession": "Process Sessions",
+      "ec_eventspeakers_SyncErrors": "Sync Errors",
+      "ec_eventspeakersid": "eventSpeakers",
+      "ec_id": "id",
+      "ec_location": "location",
+      "ec_name": "Name",
+      "ec_SpeakerRating_Speakers_ec_eventSpeaker": "Speaker Ratings",
+      "ec_time": "startTime",
+      "ec_topic": "Topic",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "eventSpeakers",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]
