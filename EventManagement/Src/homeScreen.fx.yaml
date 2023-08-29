@@ -2,6 +2,7 @@ homeScreen As screen:
     Fill: =RGBA(232, 232, 232, 1)
 
     headerComponent_1 As headerComponent:
+        iconVisible: =false
         onSelectHeader: =true
 
     navbarComponent_1 As navbarComponent:

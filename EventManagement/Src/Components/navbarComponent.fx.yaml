@@ -33,11 +33,12 @@ navbarComponent As CanvasComponent:
         "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             BorderColor: =RGBA(0, 89, 178, 1)
             DelayItemLoading: =true
+            Height: =Parent.Height - Self.Y
             Items: =navbarComponent.items
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
-            TemplateSize: =74
+            TemplateSize: =66
             Width: =200
             Y: =Icon3.Height
             ZIndex: =1
@@ -45,7 +46,7 @@ navbarComponent As CanvasComponent:
             Rectangle3 As rectangle:
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =74
+                Height: =Parent.TemplateHeight - Separator1.Height
                 OnSelect: =Select(Parent)
                 Visible: =App.ActiveScreen = ThisItem.screen
                 Width: =Parent.Width
@@ -72,7 +73,7 @@ navbarComponent As CanvasComponent:
             Separator1 As rectangle:
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =8
+                Height: =5
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth
                 Y: =Parent.TemplateHeight - Self.Height
@@ -118,4 +119,18 @@ navbarComponent As CanvasComponent:
             PaddingTop: =10
             Width: =65
             ZIndex: =2
+
+        Label3 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(250, 242, 230, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 51, 102, 1)
+            Font: =Font.'Dancing Script'
+            Height: =20
+            Size: =10
+            Text: ="E. Cobham"
+            Width: =64
+            Y: =Parent.Height - Self.Height
+            ZIndex: =3
 

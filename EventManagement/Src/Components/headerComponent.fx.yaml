@@ -5,6 +5,7 @@ headerComponent As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     headerText: ="Text"
     Height: =Max(App.Height, App.MinScreenHeight)/10.5
+    iconVisible: =true
     Width: =Max(App.Width, App.MinScreenWidth)
     X: =0
     Y: =0
@@ -49,6 +50,7 @@ headerComponent As CanvasComponent:
         PaddingLeft: =10
         PaddingRight: =10
         PaddingTop: =10
+        Visible: =headerComponent.iconVisible
         Width: =Parent.Height
         ZIndex: =3
 

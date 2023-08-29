@@ -282,7 +282,8 @@
             "IsLockable": false,
             "NameMapSourceSchema": "?"
           },
-          "OnSelect"
+          "OnSelect",
+          "Visible"
         ],
         "ControlUniqueId": "6",
         "HasDynamicProperties": false,
@@ -460,6 +461,12 @@
             "InvariantScript": "10",
             "Property": "PaddingRight",
             "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "headerComponent.iconVisible",
+            "Property": "Visible",
+            "RuleProviderType": "User"
           },
           {
             "Category": "Behavior",
@@ -1577,15 +1584,22 @@
       "Y",
       "ZIndex",
       "headerText",
-      "onSelectHeader"
+      "onSelectHeader",
+      "iconVisible"
     ],
-    "LastModifiedTimestamp": "638289131651025841",
+    "LastModifiedTimestamp": "638289148486870581",
     "Name": "headerComponent",
     "Rules": [
       {
         "Category": "Data",
         "InvariantScript": "\"Text\"",
         "Property": "headerText",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "true",
+        "Property": "iconVisible",
         "RuleProviderType": "System"
       },
       {
@@ -1663,6 +1677,15 @@
       },
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "iconVisible",
+      "Hidden": false,
+      "Name": "iconVisible",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -1673,7 +1696,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638289131651025841",
+  "LastModifiedTimestamp": "638289148486870581",
   "Name": "901cef60d23349f799fd058246c1d52f",
   "OverridableProperties": {},
   "Version": "638288220061100603"
